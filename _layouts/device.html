@@ -53,6 +53,18 @@ layout: default
 </div>
 {% endif %}
 
+{% if page.gallery %}
+<h2>{{ page.gallery_title | default: "Gallery" }}</h2>
+<div class="gallery">
+  {% for g in page.gallery %}
+  <figure>
+    <img src="{{ g.src | relative_url }}" alt="{{ g.alt | default: g.caption }}" loading="lazy">
+    {% if g.caption %}<figcaption>{{ g.caption }}</figcaption>{% endif %}
+  </figure>
+  {% endfor %}
+</div>
+{% endif %}
+
 {% if page.cost %}
 <h2>What it cost</h2>
 <table class="cost">

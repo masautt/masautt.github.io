@@ -36,6 +36,10 @@ measured: |
 
 story_title: Why I have it
 
+gallery_title: Inside
+gallery:
+  - { src: /assets/devices/asus-c302-teardown.jpg, caption: "Cracked open — battery, logic board, and speakers mid-repair.", alt: "ASUS C302 opened up showing the battery and logic board" }
+
 cost:
   items:
     - { label: "Chromebook · Feb 7, 2018", amount: "$469.00" }
