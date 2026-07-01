@@ -9,7 +9,7 @@ compiled: 2026-07-01
 order: 3
 
 hero: /assets/devices/macbook-air-m1-hero.png
-hero_alt: Silver Apple MacBook Air M1 (2020), open, front three-quarter view
+hero_alt: Space Gray Apple MacBook Air (M1, 2020), open, front view
 
 badges:
   - Refurbished · Apr 2021
@@ -62,7 +62,7 @@ links:
   - { url: "https://www.marketresearchfuture.com/reports/2-in-1-laptops-market-3948", label: "2-in-1 laptop market outlook", note: "convertibles on the rise" }
   - { url: "https://www.macrumors.com/2026/06/11/touchscreen-macbook-confirmed-leaker/", label: "MacRumors: touchscreen MacBook 'confirmed'", note: "…finally" }
 
-credit: "Hero photo via Wikimedia Commons, CC BY-SA 4.0."
+credit: "Hero image: MacBook Air M1 product photo, background removed."
 ---
 
 I still didn't have a Windows laptop I trusted to last — and I wasn't convinced any on
