@@ -31,12 +31,12 @@ a:hover{text-decoration:underline}
 .dev-card .meta .name{font-weight:700;margin:3px 0 4px;color:var(--ink)}
 .dev-card .meta .tag{font-size:13px;color:var(--muted)}
 
-/* hero */
-.hero{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
-.hero-img{background:radial-gradient(120% 120% at 50% 0%,#1b2330 0%,#0d1117 70%);
-  display:flex;align-items:center;justify-content:center;padding:24px}
-.hero-img img{max-width:100%;height:auto;filter:drop-shadow(0 18px 30px rgba(0,0,0,.55))}
-.hero-body{padding:22px 24px 26px}
+/* hero — compact side-by-side band (photo left, title/badges right) */
+.hero{display:flex;flex-wrap:wrap;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.hero-img{flex:1 1 240px;background:radial-gradient(120% 120% at 50% 0%,#1b2330 0%,#0d1117 70%);
+  display:flex;align-items:center;justify-content:center;padding:18px}
+.hero-img img{max-width:100%;max-height:200px;width:auto;height:auto;filter:drop-shadow(0 12px 24px rgba(0,0,0,.5))}
+.hero-body{flex:1.6 1 300px;padding:22px 24px;display:flex;flex-direction:column;justify-content:center}
 .eyebrow{color:var(--accent2);font-size:13px;letter-spacing:.08em;text-transform:uppercase;font-weight:600}
 h1{margin:6px 0 4px;font-size:30px;line-height:1.2}
 .sub{color:var(--muted);margin:0}
