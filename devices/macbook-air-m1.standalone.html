@@ -94,6 +94,37 @@ table.cost{width:100%;border-collapse:collapse;background:var(--card);border:1px
 .cost tr.total td{font-weight:700;color:var(--ink);background:#0d1117}
 .cost .muted{color:var(--muted)}
 
+/* benchmark table */
+table.bench{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);
+  border-radius:12px;overflow:hidden}
+.bench th{font-size:11.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);font-weight:600;
+  padding:11px 15px;border-bottom:1px solid var(--line);text-align:right}
+.bench th:first-child{text-align:left}
+.bench td{padding:11px 15px;border-top:1px solid var(--line);font-size:14.5px;text-align:right;
+  font-variant-numeric:tabular-nums}
+.bench td:first-child{text-align:left}
+.bench tbody tr:first-child td{border-top:0}
+.bench .arch{display:block;font-size:12px;color:var(--muted);font-weight:400}
+.bench tr.me td{background:#0d1117}
+.bench tr.me td:first-child strong{color:var(--accent2)}
+.bench-note{color:var(--muted);font-size:12.5px;margin:10px 2px 0}
+
+/* compare table (devices index) */
+.compare-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+table.compare{border-collapse:collapse;min-width:100%;font-size:14px}
+.compare th,.compare td{padding:11px 14px;border-top:1px solid var(--line);text-align:left;white-space:nowrap}
+.compare thead th{border-top:0;border-bottom:1px solid var(--line);vertical-align:top;font-weight:700;color:var(--ink)}
+.compare thead th a{color:var(--ink)}
+.compare thead th a:hover{color:var(--accent2)}
+.compare .st{display:block;font-size:11px;font-weight:600;color:var(--muted);margin-top:3px}
+.compare .st.on{color:var(--good)}
+.compare td.rowhead,.compare th.rowhead{position:sticky;left:0;background:var(--card);z-index:1}
+.compare td.rowhead{color:var(--muted);font-weight:600;text-transform:uppercase;font-size:12px;letter-spacing:.03em}
+.compare td.rowhead .ic{display:inline-flex;vertical-align:middle;margin-right:9px;color:var(--accent2)}
+.compare td.rowhead .ic svg{width:15px;height:15px}
+.compare tbody tr:hover td{background:#0d1117}
+.compare .dash{color:var(--line)}
+
 ul.links{list-style:none;padding:0;margin:0;display:grid;gap:8px}
 ul.links li{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:11px 14px;
   display:flex;align-items:center;gap:10px;font-size:14.5px}
@@ -244,6 +275,8 @@ this refurbished unit — I gave it to my cousin in June 2026, so they’re unve
 Anyone with the machine can confirm in two seconds via  → About This Mac.</p>
 
 </div>
+
+
 
 
 
