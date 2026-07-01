@@ -19,3 +19,4 @@ plugins: []
 exclude:
   - README.md
   - preview.sh
+  - export.sh

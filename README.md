@@ -34,6 +34,22 @@ there and it's available to every device.
 - `measured:` optional "as actually detected" callout (Markdown)
 - body (below the `---`) is the free-form story, in Markdown
 
+## Standalone HTML export
+
+Each device also gets a self-contained single-file copy at
+`devices/<slug>.standalone.html` — CSS and images inlined as data URIs, so it
+works with no server and offline (email it, open by double-click).
+
+```
+./export.sh                # regenerate for every device
+./export.sh asus-c302      # just one
+```
+
+It reads the *rendered* page: a local `_site/` build if present (run
+`jekyll build` first), otherwise the live deploy at `SITE_URL`
+(default <https://masautt.github.io>, so push + let Pages build first). Re-run
+after editing a device to refresh its standalone copy.
+
 ## Preview locally
 
 Needs Ruby + Jekyll (`gem install bundler jekyll`), then `jekyll serve`
