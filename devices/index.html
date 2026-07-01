@@ -1,0 +1,26 @@
+---
+layout: default
+title: Devices
+---
+
+<div class="crumb"><a href="{{ '/' | relative_url }}">masautt</a> / devices</div>
+
+<div class="home-head">
+  <h1>Devices</h1>
+  <p>Every machine I actually use, with specs, story, and what I paid.</p>
+</div>
+
+<div class="section-title">The fleet</div>
+<div class="card-grid">
+  {% assign devices = site.devices | sort: "compiled" | reverse %}
+  {% for d in devices %}
+  <a class="dev-card" href="{{ d.url | relative_url }}">
+    <div class="thumb"><img src="{{ d.hero | relative_url }}" alt="{{ d.hero_alt | default: d.title }}"></div>
+    <div class="meta">
+      <div class="cat">{{ d.category }}</div>
+      <div class="name">{{ d.title }}</div>
+      <div class="tag">{{ d.tagline }}</div>
+    </div>
+  </a>
+  {% endfor %}
+</div>

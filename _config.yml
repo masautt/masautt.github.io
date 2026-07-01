@@ -1,0 +1,21 @@
+title: masautt
+description: A running reference to the things in my life.
+baseurl: ""
+url: "https://masautt.github.io"
+
+# Devices are a Jekyll collection: one file per device in _devices/,
+# each rendered at /devices/<name>/ using the shared `device` layout.
+collections:
+  devices:
+    output: true
+    permalink: /devices/:name/
+
+defaults:
+  - scope: { path: "", type: "devices" }
+    values: { layout: "device" }
+
+# GitHub Pages builds this with the classic Jekyll pipeline.
+plugins: []
+exclude:
+  - README.md
+  - preview.sh

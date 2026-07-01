@@ -1,1 +1,42 @@
 # masautt.github.io
+
+A running reference to the things in my life. Built with plain Jekyll (native to
+GitHub Pages — no build config needed). Live at <https://masautt.github.io>.
+
+## Structure
+
+```
+_config.yml              site config + the `devices` collection
+_layouts/
+  default.html           <head>, CSS link, page wrapper
+  device.html            renders a device page from front-matter data
+_includes/
+  spec-icons.html        the shared inline-SVG icon set (one place, reused everywhere)
+assets/
+  css/site.css           all styling
+  devices/               device photos
+_devices/                ONE FILE PER DEVICE  <- this is where you add machines
+devices/index.html       the fleet index (auto-lists everything in _devices/)
+index.md                 home / hub landing
+```
+
+## Adding a new laptop
+
+Copy `_devices/asus-c302.md`, rename it (`_devices/<slug>.md`), and edit the
+front matter. You don't touch HTML or CSS — the `device` layout renders it.
+
+Each `specs` entry has an `icon` chosen from the set in
+`_includes/spec-icons.html`: `cpu ram storage display os battery weight ports
+price support calendar link`. Need a new one? Add a `{% when "foo" %}` branch
+there and it's available to every device.
+
+- `status:` `active` | `retired` | `stored` (drives the top-left badge)
+- `measured:` optional "as actually detected" callout (Markdown)
+- body (below the `---`) is the free-form story, in Markdown
+
+## Preview locally
+
+Needs Ruby + Jekyll (`gem install bundler jekyll`), then `jekyll serve`
+(http://localhost:4000). No Ruby handy (e.g. on the Chromebook)? `./preview.sh`
+serves a rough static preview with Python — good enough to eyeball layout, but
+Liquid tags won't render.
