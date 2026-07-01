@@ -17,7 +17,7 @@ title: Devices
   <a class="dev-card" href="{{ d.url | relative_url }}">
     <div class="thumb"><img src="{{ d.hero | relative_url }}" alt="{{ d.hero_alt | default: d.title }}"></div>
     <div class="meta">
-      <div class="cat">{{ d.category }}</div>
+      <div class="cat">{{ d.category | remove_first: "Laptop · " }}</div>
       <div class="name">{{ d.title }}</div>
       <div class="tag">{{ d.tagline }}</div>
     </div>
