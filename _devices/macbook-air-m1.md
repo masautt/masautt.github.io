@@ -37,6 +37,12 @@ measured: |
 
 story_title: Why I got it — and why it let me down
 
+gallery_title: Photos
+gallery:
+  - { src: /assets/devices/macbook-air-m1-studio.jpg, caption: "The M1 Air, lid open. (Space Gray shown — mine was Silver; representative photos until I get real shots of my unit.)", alt: "Apple MacBook Air M1 open, studio white background" }
+  - { src: /assets/devices/macbook-air-m1-open.jpg, caption: "Running Big Sur — the OS it shipped with.", alt: "MacBook Air M1 open showing the macOS Big Sur desktop" }
+  - { src: /assets/devices/macbook-air-m1-desk.jpg, caption: "The whole point: silent, thin, go-anywhere.", alt: "MacBook Air M1 open on a desk" }
+
 cost:
   items:
     - { label: "Refurbished MacBook Air · Apr 10, 2021", amount: "$1,189.00" }
@@ -52,7 +58,7 @@ links:
   - { url: "https://www.marketresearchfuture.com/reports/2-in-1-laptops-market-3948", label: "2-in-1 laptop market outlook", note: "convertibles on the rise" }
   - { url: "https://www.macrumors.com/2026/06/11/touchscreen-macbook-confirmed-leaker/", label: "MacRumors: touchscreen MacBook 'confirmed'", note: "…finally" }
 
-credit: "Hero photo by Wikimedia Commons contributor, CC BY-SA 4.0."
+credit: "Photos via Wikimedia Commons (CC0 / CC BY-SA 4.0). Gallery shots are Space Gray units — representative, not my actual Silver machine."
 ---
 
 I still didn't have a Windows laptop I trusted to last — and I wasn't convinced any on
