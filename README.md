@@ -50,11 +50,12 @@ It reads the *rendered* page: a local `_site/` build if present (run
 (default <https://masautt.github.io>, so push + let Pages build first). Re-run
 after editing a device to refresh its standalone copy.
 
-**Automated:** you normally don't run this by hand. The
-`.github/workflows/export-standalone.yml` Action builds the site with Jekyll and
-re-runs `export.sh` on every push that touches a device page, committing the
-refreshed standalone files back. Just add/edit a device and push — the
-`.standalone.html` follows automatically.
+**Automated:** you normally don't run this by hand. A single Actions pipeline
+(`.github/workflows/pages.yml`) builds the site, runs `export.sh`, commits the
+refreshed standalone files back, and deploys — all in one run. Pages is set to
+deploy from this workflow (`build_type: workflow`), so there's no second racing
+build. Just add/edit a device and push; the page, the standalone, and the deploy
+all follow automatically.
 
 ## Preview locally
 
