@@ -24,3 +24,36 @@ title: Devices
   </a>
   {% endfor %}
 </div>
+
+<div class="section-title">Compare</div>
+<div class="compare-wrap">
+<table class="compare">
+  <thead>
+    <tr>
+      <th class="rowhead"></th>
+      {% for d in devices %}
+      <th>
+        <a href="{{ d.url | relative_url }}">{{ d.short | default: d.title }}</a>
+        {% if d.status == "active" %}<span class="st on">● In service</span>
+        {% elsif d.status == "retired" %}<span class="st">Retired</span>
+        {% elsif d.status == "stored" %}<span class="st">In storage</span>{% endif %}
+      </th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {% assign rows = "cpu,Processor|ram,Memory|storage,Storage|display,Display|os,OS|battery,Battery|weight,Weight|ports,Ports|price,Price|calendar,Released" | split: "|" %}
+    {% for row in rows %}
+      {% assign parts = row | split: "," %}
+      {% assign ic = parts[0] %}
+      <tr>
+        <td class="rowhead"><span class="ic">{% include spec-icons.html name=ic %}</span>{{ parts[1] }}</td>
+        {% for d in devices %}
+          {% assign s = d.specs | where: "icon", ic | first %}
+          <td>{% if s %}{{ s.v }}{% else %}<span class="dash">—</span>{% endif %}</td>
+        {% endfor %}
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>

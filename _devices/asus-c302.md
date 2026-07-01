@@ -1,12 +1,13 @@
 ---
 title: ASUS Chromebook Flip C302CA
 slug: asus-c302
+short: C302
 category: Laptop · Convertible Chromebook
 tagline: The college battery-life machine, revived in 2026.
 status: active            # active | retired | stored
 compiled: 2026-07-01
 
-hero: /assets/devices/asus-c302-hero.jpg
+hero: /assets/devices/asus-c302-hero.png
 hero_alt: ASUS Chromebook Flip C302 shown in multiple 360-degree hinge positions
 
 badges:

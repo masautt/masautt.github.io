@@ -46,6 +46,23 @@ layout: default
 </div>
 {% endif %}
 
+{% if page.benchmarks %}
+<h2>{{ page.benchmarks_title | default: "How it benchmarks" }}</h2>
+<table class="bench">
+  <thead><tr><th>CPU</th><th>Single-thread</th><th>Multi&nbsp;(CPU&nbsp;Mark)</th></tr></thead>
+  <tbody>
+  {% for b in page.benchmarks %}
+  <tr class="{% if b.me %}me{% endif %}">
+    <td><strong>{{ b.cpu }}</strong>{% if b.arch %}<span class="arch">{{ b.arch }}</span>{% endif %}</td>
+    <td>{{ b.st }}</td>
+    <td>{{ b.mt }}</td>
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% if page.benchmarks_note %}<p class="bench-note">{{ page.benchmarks_note }}</p>{% endif %}
+{% endif %}
+
 {% if content != "" %}
 <h2>{{ page.story_title | default: "Why I have it" }}</h2>
 <div class="story">

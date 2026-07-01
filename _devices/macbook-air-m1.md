@@ -1,6 +1,7 @@
 ---
 title: MacBook Air (M1, 2020)
 slug: macbook-air-m1
+short: MacBook Air
 category: Laptop · Apple Silicon
 tagline: Powerful, silent, and somehow still a letdown.
 status: retired            # active | retired | stored
