@@ -4,8 +4,9 @@ slug: thinkpad-x1-2in1-gen10
 short: X1 2-in-1
 category: Laptop · Windows Convertible
 tagline: The bright Windows C302 I waited years for.
-status: active            # active | retired | stored
+status: active            # active | retired | stored | loaned
 compiled: 2026-07-01
+order: 1
 
 hero: /assets/devices/thinkpad-x1-2in1-gen10-hero.png
 hero_alt: Lenovo ThinkPad X1 2-in-1 Gen 10 Aura Edition, open, front three-quarter view
@@ -23,7 +24,7 @@ specs:
   - { icon: display,  k: Display,   v: "14″ 2.8K OLED",           note: "2880×1800 · 120 Hz VRR · touch + pen" }
   - { icon: os,       k: OS,        v: "Windows 11 Pro",          note: "build 26200 (25H2)" }
   - { icon: battery,  k: Battery,   v: "57 Wh",                   note: "up to ~20 hr · measured 59.3 Wh" }
-  - { icon: weight,   k: Weight,    v: "1.28 kg",                 note: "2.82 lb · 360° convertible" }
+  - { icon: weight,   k: Weight,    v: "2.82 lb",                 note: "1,280 g · 360° convertible" }
   - { icon: ports,    k: Ports,     v: "2× Thunderbolt 4",        note: "2× USB-A · HDMI 2.1 · 3.5mm" }
   - { icon: link,     k: Wireless,  v: "Wi-Fi 7 + BT 5.4",        note: "Intel BE201 · 320 MHz" }
   - { icon: support,  k: Warranty,  v: "2-year",                  note: "eBay Refurbished · open-box" }

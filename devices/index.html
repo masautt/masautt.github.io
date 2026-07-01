@@ -12,7 +12,7 @@ title: Devices
 
 <div class="section-title">The fleet</div>
 <div class="card-grid">
-  {% assign devices = site.devices | sort: "compiled" | reverse %}
+  {% assign devices = site.devices | sort: "order" %}
   {% for d in devices %}
   <a class="dev-card" href="{{ d.url | relative_url }}">
     <div class="thumb"><img src="{{ d.hero | relative_url }}" alt="{{ d.hero_alt | default: d.title }}"></div>
@@ -36,7 +36,8 @@ title: Devices
         <a href="{{ d.url | relative_url }}">{{ d.short | default: d.title }}</a>
         {% if d.status == "active" %}<span class="st on">● In service</span>
         {% elsif d.status == "retired" %}<span class="st">Retired</span>
-        {% elsif d.status == "stored" %}<span class="st">In storage</span>{% endif %}
+        {% elsif d.status == "stored" %}<span class="st">In storage</span>
+        {% elsif d.status == "loaned" %}<span class="st">Loaned out</span>{% endif %}
       </th>
       {% endfor %}
     </tr>
