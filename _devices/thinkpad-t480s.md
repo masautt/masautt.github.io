@@ -4,8 +4,9 @@ slug: thinkpad-t480s
 short: T480s
 category: Laptop · Business Ultrabook
 tagline: The layoff laptop — cheap, loaded with RAM, dual-booted to Linux.
-status: retired            # active | retired | stored
+status: active            # active | retired | stored | loaned
 compiled: 2026-07-01
+order: 2
 
 hero: /assets/devices/thinkpad-t480s-hero.png
 hero_alt: Lenovo ThinkPad T480s, black business ultrabook, open, front three-quarter view
@@ -20,9 +21,9 @@ specs:
   - { icon: ram,      k: Memory,    v: "24 GB DDR4",           note: "8 GB soldered + 16 GB SODIMM" }
   - { icon: storage,  k: Storage,   v: "1 TB NVMe SSD",        note: "the roomy part" }
   - { icon: display,  k: Display,   v: "14″ FHD 1920×1080",    note: "IPS · anti-glare · non-touch" }
-  - { icon: os,       k: OS,        v: "Ubuntu + Windows 10",  note: "dual-boot via GRUB" }
+  - { icon: os,       k: OS,        v: "Ubuntu + Windows 11",  note: "Ubuntu 24.04 + Win 11 · dual-boot via GRUB" }
   - { icon: battery,  k: Battery,   v: "57 Wh",                note: "internal · spec sheet (not yet measured)" }
-  - { icon: weight,   k: Weight,    v: "1.32 kg",              note: "2.9 lb · magnesium chassis" }
+  - { icon: weight,   k: Weight,    v: "2.91 lb",              note: "1,320 g · magnesium chassis" }
   - { icon: ports,    k: Ports,     v: "2× USB-C · 2× USB-A",  note: "Thunderbolt 3 · HDMI · RJ45 · microSD" }
   - { icon: price,    k: Paid,      v: "$477.41",              note: "all-in · Dec 9 2023" }
   - { icon: calendar, k: Released,  v: "2018",                 note: "Q1 · Kaby Lake R" }

@@ -4,8 +4,9 @@ slug: macbook-air-m1
 short: MacBook Air
 category: Laptop · Apple Silicon
 tagline: Powerful, silent, and somehow still a letdown.
-status: retired            # active | retired | stored
+status: loaned            # active | retired | stored | loaned
 compiled: 2026-07-01
+order: 3
 
 hero: /assets/devices/macbook-air-m1-hero.png
 hero_alt: Silver Apple MacBook Air M1 (2020), open, front three-quarter view
@@ -13,7 +14,7 @@ hero_alt: Silver Apple MacBook Air M1 (2020), open, front three-quarter view
 badges:
   - Refurbished · Apr 2021
   - { text: "1 external display max", class: "eol" }
-  - Passed to family · Jun 2026
+  - Loaned to family · Jun 2026
 
 specs:
   - { icon: cpu,      k: Chip,      v: "Apple M1",           note: "8-core CPU · 7-core GPU · 16-core NE" }
@@ -23,7 +24,7 @@ specs:
   - { icon: lock,     k: Ext. displays, v: "1 external max", note: "M1 hardware limit" }
   - { icon: os,       k: OS,        v: "macOS",              note: "shipped Big Sur 11" }
   - { icon: battery,  k: Battery,   v: "up to 18 hr",        note: "fanless — silent" }
-  - { icon: weight,   k: Weight,    v: "1.29 kg",            note: "2.8 lb · Touch ID" }
+  - { icon: weight,   k: Weight,    v: "2.8 lb",             note: "1,290 g · Touch ID" }
   - { icon: ports,    k: Ports,     v: "2× Thunderbolt",     note: "USB4 · 3.5mm" }
   - { icon: price,    k: Paid,      v: "$1,193",             note: "refurb · Apr 10 2021" }
   - { icon: calendar, k: Released,  v: "Nov 2020",           note: "model A2337 · never refreshed" }
