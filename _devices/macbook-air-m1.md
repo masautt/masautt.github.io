@@ -8,7 +8,7 @@ status: loaned            # active | retired | stored | loaned
 compiled: 2026-07-01
 order: 3
 purchased: "Apr 10, 2021"
-msrp: "$1,199"
+msrp: "$1,249"
 
 hero: /assets/devices/macbook-air-m1-hero.png
 hero_alt: Space Gray Apple MacBook Air (M1, 2020), open, front view
@@ -19,7 +19,7 @@ badges:
   - Loaned to family · Jun 2026
 
 specs:
-  - { icon: cpu,      k: Chip,      v: "Apple M1",           note: "8-core CPU · 7-core GPU · 16-core NE" }
+  - { icon: cpu,      k: Chip,      v: "Apple M1",           note: "8-core CPU · 8-core GPU · 16-core NE" }
   - { icon: ram,      k: Memory,    v: "8 GB unified",       note: "best recollection — unconfirmed" }
   - { icon: storage,  k: Storage,   v: "512 GB SSD",         note: "from memory — unconfirmed" }
   - { icon: display,  k: Display,   v: "13.3″ 2560×1600",    note: "Retina · P3 · 400 nits" }
@@ -34,8 +34,8 @@ specs:
 measured_title: Config note
 measured_label: "⌘ Some specs are from memory"
 measured: |
-  What's on the label is confirmed: **13.3″ M1, 8-core CPU, 7-core GPU** (the entry
-  config, in Silver). The **8 GB RAM** and **512 GB SSD** are my best recollection of
+  What's on the label is confirmed: **13.3″ M1, 8-core CPU, 8-core GPU** (the step-up
+  512 GB config, in Silver). The **8 GB RAM** and **512 GB SSD** are my best recollection of
   this refurbished unit — I gave it to my cousin in June 2026, so they're unverified.
   Anyone with the machine can confirm in two seconds via  → About This Mac.
 
