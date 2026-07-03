@@ -105,7 +105,7 @@ table.bench{width:100%;border-collapse:collapse;background:var(--card);border:1p
 /* compare table (devices index) */
 .compare-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--card)}
 table.compare{border-collapse:collapse;min-width:100%;font-size:14px}
-.compare th,.compare td{padding:11px 14px;border-top:1px solid var(--line);text-align:left;white-space:nowrap}
+.compare th,.compare td{padding:11px 14px;border-top:1px solid var(--line);text-align:left;white-space:nowrap;vertical-align:top}
 .compare thead th{border-top:0;border-bottom:1px solid var(--line);vertical-align:top;font-weight:700;color:var(--ink)}
 .compare thead th a{color:var(--ink)}
 .compare thead th a:hover{color:var(--accent2)}

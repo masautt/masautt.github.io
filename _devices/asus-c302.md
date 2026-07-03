@@ -25,7 +25,7 @@ specs:
   - { icon: os,      k: OS today,  v: "Debian 11 (Crostini)", note: "kernel 5.15.108" }
   - { icon: battery, k: Battery,   v: "39 Wh",               note: "~10 hr real-world · the reason I bought it" }
   - { icon: weight,  k: Weight,    v: "2.6 lb",             note: "1,180 g · aluminum" }
-  - { icon: ports,   k: Ports,     v: "2× USB-C",           note: "microSD · 3.5mm" }
+  - { icon: ports,   k: Ports,     v: "2× USB-C (3.1 Gen 1)<br>microSD<br>3.5 mm headphone", note: "both USB-C charge + display out" }
   - { icon: price,   k: Paid,      v: "$510.35",            note: "all-in · Feb 7 2018" }
   - { icon: support, k: Support,   v: "2017 – Jun 2023",    note: "~6 yrs of ChromeOS updates" }
   - { icon: calendar, k: Released, v: "Jan 2017",           note: "announced at CES 2017" }

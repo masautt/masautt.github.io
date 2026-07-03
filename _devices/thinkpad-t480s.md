@@ -25,9 +25,9 @@ specs:
   - { icon: os,       k: OS,        v: "Ubuntu + Windows 11",  note: "Ubuntu 24.04 + Win 11 · dual-boot via GRUB" }
   - { icon: battery,  k: Battery,   v: "57 Wh",                note: "internal · spec sheet (not yet measured)" }
   - { icon: weight,   k: Weight,    v: "2.91 lb",              note: "1,320 g · magnesium chassis" }
-  - { icon: ports,    k: Ports,     v: "2× USB-C · 2× USB-A",  note: "Thunderbolt 3 · HDMI · RJ45 · microSD" }
+  - { icon: ports,    k: Ports,     v: "2× USB-C (Thunderbolt 3)<br>2× USB-A 3.1<br>HDMI<br>RJ-45 Gigabit Ethernet<br>microSD<br>3.5 mm", note: "native Ethernet + side dock connector" }
   - { icon: price,    k: Paid,      v: "$477.41",              note: "all-in · Dec 9 2023" }
-  - { icon: calendar, k: Released,  v: "2018",                 note: "Q1 · Kaby Lake R" }
+  - { icon: calendar, k: Released,  v: "Jan 2018",              note: "CES 2018 · Kaby Lake R" }
 
 measured_title: As measured
 measured_label: "◈ Live readout pending"

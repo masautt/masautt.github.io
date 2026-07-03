@@ -26,7 +26,7 @@ specs:
   - { icon: os,       k: OS,        v: "macOS",              note: "shipped Big Sur 11" }
   - { icon: battery,  k: Battery,   v: "49.9 Wh",            note: "up to 18 hr web · fanless, silent" }
   - { icon: weight,   k: Weight,    v: "2.8 lb",             note: "1,290 g · Touch ID" }
-  - { icon: ports,    k: Ports,     v: "2× Thunderbolt",     note: "USB4 · 3.5mm" }
+  - { icon: ports,    k: Ports,     v: "2× Thunderbolt / USB 4<br>3.5 mm headphone", note: "USB4 · 40 Gb/s — that's everything" }
   - { icon: price,    k: Paid,      v: "$1,193",             note: "refurb · Apr 10 2021" }
   - { icon: calendar, k: Released,  v: "Nov 2020",           note: "model A2337 · never refreshed" }
 
