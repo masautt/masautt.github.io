@@ -8,6 +8,7 @@ status: loaned            # active | retired | stored | loaned
 compiled: 2026-07-01
 order: 3
 purchased: "Apr 10, 2021"
+msrp: "$999"
 
 hero: /assets/devices/macbook-air-m1-hero.png
 hero_alt: Space Gray Apple MacBook Air (M1, 2020), open, front view

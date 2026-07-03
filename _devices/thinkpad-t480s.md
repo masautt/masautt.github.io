@@ -8,6 +8,7 @@ status: active            # active | retired | stored | loaned
 compiled: 2026-07-01
 order: 2
 purchased: "Dec 9, 2023"
+msrp: "$1,269"
 
 hero: /assets/devices/thinkpad-t480s-hero.png
 hero_alt: Lenovo ThinkPad T480s, black business ultrabook, open, front three-quarter view

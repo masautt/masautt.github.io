@@ -8,6 +8,7 @@ status: active            # active | retired | stored | loaned
 compiled: 2026-07-01
 order: 4
 purchased: "Feb 7, 2018"
+msrp: "$499"
 
 hero: /assets/devices/asus-c302-hero.png
 hero_alt: ASUS Chromebook Flip C302 shown in multiple 360-degree hinge positions

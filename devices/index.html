@@ -43,7 +43,7 @@ title: Devices
     </tr>
   </thead>
   <tbody>
-    {% assign rows = "cpu,Processor|ram,Memory|storage,Storage|display,Display|os,OS|battery,Battery|weight,Weight|ports,Ports|price,Price|calendar,Released" | split: "|" %}
+    {% assign rows = "cpu,Processor|ram,Memory|storage,Storage|display,Display|os,OS|battery,Battery|weight,Weight|ports,Ports" | split: "|" %}
     {% for row in rows %}
       {% assign parts = row | split: "," %}
       {% assign ic = parts[0] %}
@@ -55,6 +55,26 @@ title: Devices
         {% endfor %}
       </tr>
     {% endfor %}
+      <tr>
+        <td class="rowhead"><span class="ic">{% include spec-icons.html name="price" %}</span>Paid</td>
+        {% for d in devices %}
+          {% assign s = d.specs | where: "icon", "price" | first %}
+          <td>{% if s %}{{ s.v }}{% else %}<span class="dash">—</span>{% endif %}</td>
+        {% endfor %}
+      </tr>
+      <tr>
+        <td class="rowhead"><span class="ic">{% include spec-icons.html name="price" %}</span>Launch MSRP</td>
+        {% for d in devices %}
+          <td>{% if d.msrp %}{{ d.msrp }}{% else %}<span class="dash">—</span>{% endif %}</td>
+        {% endfor %}
+      </tr>
+      <tr>
+        <td class="rowhead"><span class="ic">{% include spec-icons.html name="calendar" %}</span>Released</td>
+        {% for d in devices %}
+          {% assign s = d.specs | where: "icon", "calendar" | first %}
+          <td>{% if s %}{{ s.v }}{% else %}<span class="dash">—</span>{% endif %}</td>
+        {% endfor %}
+      </tr>
       <tr>
         <td class="rowhead"><span class="ic">{% include spec-icons.html name="cart" %}</span>Purchased</td>
         {% for d in devices %}

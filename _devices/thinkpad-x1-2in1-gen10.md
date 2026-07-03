@@ -8,6 +8,7 @@ status: active            # active | retired | stored | loaned
 compiled: 2026-07-01
 order: 1
 purchased: "Nov 11, 2026"
+msrp: "$2,149"
 
 hero: /assets/devices/thinkpad-x1-2in1-gen10-hero.png
 hero_alt: Lenovo ThinkPad X1 2-in-1 Gen 10 Aura Edition, open, front three-quarter view
