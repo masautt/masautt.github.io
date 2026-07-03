@@ -65,21 +65,12 @@ links:
 credit: "Hero image: official ThinkPad T480s product render, courtesy of Lenovo."
 ---
 
-I bought this **a month into being laid off**, in December 2023. I needed something *cheap*
-that could still do real, powerful work — and for **$477 all-in**, a used T480s with an i7,
-**24 GB of RAM**, and a 1 TB SSD fit the bill exactly.
+I bought this **a month into being laid off**, in December 2023. I needed something *cheap* that could still do real, powerful work — and for **$477 all-in**, a used T480s with an i7, **24 GB of RAM**, and a 1 TB SSD fit the bill exactly.
 
-It was my **first Windows laptop since the HP Envy** — and a night-and-day upgrade. It was
-more powerful, it finally had **USB-C**, and, crucially, it had none of the Envy's
-headaches: no flaky network connectivity, no bloatware. It just worked.
+It was my **first Windows laptop since the HP Envy** — and a night-and-day upgrade. It was more powerful, it finally had **USB-C**, and, crucially, it had none of the Envy's headaches: no flaky network connectivity, no bloatware. It just worked.
 
-> The RAM is what made it feel powerful for the money. Twenty-four gigs on a $477 laptop
-> covered a lot of sins.
+> The RAM is what made it feel powerful for the money. Twenty-four gigs on a $477 laptop covered a lot of sins.
 
-I **dual-booted** it with GRUB — Ubuntu alongside the old Windows install — and mostly
-lived on the Linux side. I never loved dual-booting *into* Windows, though: it always
-seemed to catch me in one of those restart-and-update loops right when I needed the machine.
+I **dual-booted** it with GRUB — Ubuntu alongside the old Windows install — and mostly lived on the Linux side. I never loved dual-booting *into* Windows, though: it always seemed to catch me in one of those restart-and-update loops right when I needed the machine.
 
-I ran it for a few years as my daily driver, right up until I finally bought the
-[ThinkPad X1](/devices/thinkpad-x1-2in1-gen10/). More detail to come here once I'm back on
-the 480s to pull its live specs.
+I ran it for a few years as my daily driver, right up until I finally bought the [ThinkPad X1](/devices/thinkpad-x1-2in1-gen10/). More detail to come here once I'm back on the 480s to pull its live specs.

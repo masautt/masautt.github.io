@@ -60,15 +60,10 @@ links:
 credit: "Hero & teardown photos © iFixit, CC BY-NC-SA 3.0."
 ---
 
-I bought this in college because I needed something with **great battery life** — something
-that would survive a full day of classes without a charger. On that promise, it delivered.
+I bought this in college because I needed something with **great battery life** — something that would survive a full day of classes without a charger. On that promise, it delivered.
 
-> The frustration was everything else: it's a Chromebook. Getting it dev-tooled was a constant
-> fight, because it isn't real Linux — it's a *special* Linux.
+> The frustration was everything else: it's a Chromebook. Getting it dev-tooled was a constant fight, because it isn't real Linux — it's a *special* Linux.
 
-So much of the standard Linux world just… didn't apply, and a lot of things I couldn't fix simply
-because the platform wouldn't let me. For a while I ran [Crouton](https://github.com/dnschneid/crouton)
-to get a usable chroot with actual tooling — which worked until it didn't (Crouton itself is now EOL).
+So much of the standard Linux world just… didn't apply, and a lot of things I couldn't fix simply because the platform wouldn't let me. For a while I ran [Crouton](https://github.com/dnschneid/crouton) to get a usable chroot with actual tooling — which worked until it didn't (Crouton itself is now EOL).
 
-Now, in **2026**, I'm reviving it with Claude — and I'm genuinely surprised how much I can still put
-on here. Three years past its official ChromeOS end-of-life, it's back to being a real dev machine.
+Now, in **2026**, I'm reviving it with Claude — and I'm genuinely surprised how much I can still put on here. Three years past its official ChromeOS end-of-life, it's back to being a real dev machine.

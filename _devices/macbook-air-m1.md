@@ -67,44 +67,20 @@ links:
 credit: "Hero image: MacBook Air M1 product photo, background removed."
 ---
 
-I still didn't have a Windows laptop I trusted to last — and I wasn't convinced any on
-the market would survive the years I wanted. So in April 2021 I gambled on a
-**refurbished M1 Air** instead, betting that Apple Silicon was powerful enough to just
-*do everything*.
+I still didn't have a Windows laptop I trusted to last — and I wasn't convinced any on the market would survive the years I wanted. So in April 2021 I gambled on a **refurbished M1 Air** instead, betting that Apple Silicon was powerful enough to just *do everything*.
 
 It mostly was. I was still let down. The reasons stacked up:
 
-**The scrolling.** My Logitech mouse scrolled beautifully on Ubuntu, on Windows, even
-on my C302 Chromebook. On macOS it was choppy and stuttery and I couldn't understand
-why. Turns out third-party mice just scroll badly on macOS unless you bolt on a helper —
-[Mos](https://mos.caldis.me/), [SmoothScroll](https://www.smoothscroll.net/), or Mac
-Mouse Fix ([here's the whole rabbit hole](https://baty.net/posts/2025/03/fixing-the-terrible-scrolling-behavior-with-logitech-mx-master-on-mac-os/)).
-I downloaded the smooth-scroll app and never got it feeling right.
+**The scrolling.** My Logitech mouse scrolled beautifully on Ubuntu, on Windows, even on my C302 Chromebook. On macOS it was choppy and stuttery and I couldn't understand why. Turns out third-party mice just scroll badly on macOS unless you bolt on a helper — [Mos](https://mos.caldis.me/), [SmoothScroll](https://www.smoothscroll.net/), or Mac Mouse Fix ([here's the whole rabbit hole](https://baty.net/posts/2025/03/fixing-the-terrible-scrolling-behavior-with-logitech-mx-master-on-mac-os/)). I downloaded the smooth-scroll app and never got it feeling right.
 
-**One monitor. Just one.** The M1 Air is hardware-locked to a
-[single external display](https://support.apple.com/en-us/122212) — and it stung more
-when I found out the [M1 Mac *mini* could drive two](https://support.apple.com/en-us/102194).
-Same chip, [plenty powerful](https://appleinsider.com/articles/20/11/11/how-apple-silicon-on-a-m1-mac-changes-monitor-support-and-what-you-can-connect),
-artificially capped on the laptop.
+**One monitor. Just one.** The M1 Air is hardware-locked to a [single external display](https://support.apple.com/en-us/122212) — and it stung more when I found out the [M1 Mac *mini* could drive two](https://support.apple.com/en-us/102194). Same chip, [plenty powerful](https://appleinsider.com/articles/20/11/11/how-apple-silicon-on-a-m1-mac-changes-monitor-support-and-what-you-can-connect), artificially capped on the laptop.
 
 > A total hardware lock — and it made me angrier once I knew the silicon could clearly handle it.
 
-**Binding of Isaac.** Then Nicalis simply
-[stopped supporting the Mac version of Repentance](https://steamcommunity.com/app/250900/discussions/0/5170673756533676612/) —
-Windows-only from then on. That one genuinely made me sad.
+**Binding of Isaac.** Then Nicalis simply [stopped supporting the Mac version of Repentance](https://steamcommunity.com/app/250900/discussions/0/5170673756533676612/) — Windows-only from then on. That one genuinely made me sad.
 
-**No tablet mode.** The biggest realization: I don't think I'll ever buy a
-non-convertible laptop again. Not really for tablet mode — it's that I live by standing
-a 2-in-1 on my wooden stand in presentation mode with the keyboard and mouse tucked
-underneath. (Turns out [I'm not alone — convertibles are on the rise](https://www.marketresearchfuture.com/reports/2-in-1-laptops-market-3948).)
+**No tablet mode.** The biggest realization: I don't think I'll ever buy a non-convertible laptop again. Not really for tablet mode — it's that I live by standing a 2-in-1 on my wooden stand in presentation mode with the keyboard and mouse tucked underneath. (Turns out [I'm not alone — convertibles are on the rise](https://www.marketresearchfuture.com/reports/2-in-1-laptops-market-3948).)
 
-And honestly: how is it **2026** and there's *still* no touchscreen MacBook? I know it'd
-eat into iPad sales — but come on. It's finally
-[reportedly coming](https://www.macrumors.com/2026/06/11/touchscreen-macbook-confirmed-leaker/),
-maybe [2027 with OLED and touch](https://appleinsider.com/articles/26/06/26/oled-touchscreen-and-more-what-to-expect-from-the-2027-macbook-pro).
-When there's a foldable, touchscreen Mac, I'll probably buy again.
+And honestly: how is it **2026** and there's *still* no touchscreen MacBook? I know it'd eat into iPad sales — but come on. It's finally [reportedly coming](https://www.macrumors.com/2026/06/11/touchscreen-macbook-confirmed-leaker/), maybe [2027 with OLED and touch](https://appleinsider.com/articles/26/06/26/oled-touchscreen-and-more-what-to-expect-from-the-2027-macbook-pro). When there's a foldable, touchscreen Mac, I'll probably buy again.
 
-I made a few runs at it over the years — building iOS apps, trying it as a little
-server — but I finally gave up in **June 2026** and handed it to my cousin as her daily
-driver. I still feel a little bad: at coffee shops she ends up hugging the wall to keep
-it charged.
+I made a few runs at it over the years — building iOS apps, trying it as a little server — but I finally gave up in **June 2026** and handed it to my cousin as her daily driver. I still feel a little bad: at coffee shops she ends up hugging the wall to keep it charged.

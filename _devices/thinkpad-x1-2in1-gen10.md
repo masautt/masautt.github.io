@@ -72,26 +72,12 @@ links:
 credit: "Hero image: official product render, courtesy of Lenovo."
 ---
 
-All I really wanted was the **brightest** screen I could get — and, honestly, a *Windows
-version of my [C302](/devices/asus-c302/)*. Same go-anywhere convertible, just a little
-larger. That's exactly what I ended up with, and I'm in love. Love, love, love. I've been
-waiting years for the best Windows laptop *for me*.
+All I really wanted was the **brightest** screen I could get — and, honestly, a *Windows version of my [C302](/devices/asus-c302/)*. Same go-anywhere convertible, just a little larger. That's exactly what I ended up with, and I'm in love. Love, love, love. I've been waiting years for the best Windows laptop *for me*.
 
 > A Windows C302 — brighter, a little bigger, and built like a ThinkPad. That's all I was ever after.
 
-Part of that wait traces back to 2019, when I spent my **Eagle Scout money** on an HP Envy
-in high school and felt gipped. I'd bought it because the box said "GTX dedicated
-graphics" — but it turned out to be one of the low-power **M-series** mobile GPUs, and back
-then I didn't understand how the CPU and GPU actually pair up. I wasn't repeating that
-mistake. This time I was all over [cpubenchmark](https://www.cpubenchmark.net/), lining
-this machine up against a whole shortlist before buying — no more surprises about what's
-really under the hood.
+Part of that wait traces back to 2019, when I spent my **Eagle Scout money** on an HP Envy in high school and felt gipped. I'd bought it because the box said "GTX dedicated graphics" — but it turned out to be one of the low-power **M-series** mobile GPUs, and back then I didn't understand how the CPU and GPU actually pair up. I wasn't repeating that mistake. This time I was all over [cpubenchmark](https://www.cpubenchmark.net/), lining this machine up against a whole shortlist before buying — no more surprises about what's really under the hood.
 
-My must-haves were short: a **touchscreen**, a genuinely **bright** display, and the
-**enterprise build quality** of a ThinkPad. I've owned several over the years, and my last
-one — a **T480s** — impressed me. I just didn't want its downsides again: a dim panel, a
-slow CPU, and no touch. This one fixes all three.
+My must-haves were short: a **touchscreen**, a genuinely **bright** display, and the **enterprise build quality** of a ThinkPad. I've owned several over the years, and my last one — a **T480s** — impressed me. I just didn't want its downsides again: a dim panel, a slow CPU, and no touch. This one fixes all three.
 
-My only real gripe — and it seems to be *every* laptop right now — is that both USB-C ports
-sit on the **same side**. My C302 had one on the left and one on the right, and I miss
-that. At least this one has the **dedicated HDMI port** I needed.
+My only real gripe — and it seems to be *every* laptop right now — is that both USB-C ports sit on the **same side**. My C302 had one on the left and one on the right, and I miss that. At least this one has the **dedicated HDMI port** I needed.
