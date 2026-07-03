@@ -32,18 +32,13 @@ specs:
   - { icon: price,    k: Paid,      v: "$1,630.16",               note: "all-in · Nov 11 2026" }
   - { icon: calendar, k: Released,  v: "Sep 2024",                note: "announced IFA 2024 · US Mar 2025" }
 
-measured_title: As measured (2026)
-measured_label: "◈ Live readout from this machine"
+measured_title: Battery health
+measured_label: "◈ Live readout — powercfg /batteryreport · 2026-07-03"
 measured: |
-  Pulled straight off this unit on **2026-07-01** — the machine I'm typing this on.
-  Firmware reports `LENOVO 21NU0032US`, BIOS `N4BET75W 1.45`. The CPU comes back as
-  `Core Ultra 7 268V` — **8 cores / 8 threads**, `2.2 GHz` base / `5.0 GHz` turbo,
-  with the `Intel Arc 140V` iGPU and `Intel AI Boost` NPU alongside it. Memory:
-  `31.5 GiB` of LPDDR5X-8533 (Micron, soldered on-package — it shows up as 8× banks).
-  Storage: a `KIOXIA KBG6AZNV1T02` 1 TB NVMe drive (`954 GB` formatted). The panel is
-  running `2880×1800 @ 120 Hz`. Battery reads `59.3 Wh` full-charge against a `57.0 Wh`
-  design rating — **100% of design health after 86 cycles**. Wi-Fi 7 (`Intel BE201`)
-  linked at `4.8 Gbps`.
+  Captured on this unit with Windows' own `powercfg /batteryreport`. The pack is an
+  **SMP lithium-polymer** rated at `57,030 mWh` (**57.0 Wh**) by design, yet it still
+  full-charges to `59,320 mWh` (**59.3 Wh**) — about **104% of the design rating**, i.e.
+  no measurable wear after **86 charge cycles**.
 
 benchmarks_title: How it benchmarks
 benchmarks_note: >-
@@ -81,8 +76,7 @@ version of my [C302](/devices/asus-c302/)*. Same go-anywhere convertible, just a
 larger. That's exactly what I ended up with, and I'm in love. Love, love, love. I've been
 waiting years for the best Windows laptop *for me*.
 
-> A Windows C302 — brighter, a little bigger, and built like a ThinkPad. That's all I was
-> ever after.
+> A Windows C302 — brighter, a little bigger, and built like a ThinkPad. That's all I was ever after.
 
 Part of that wait traces back to 2019, when I spent my **Eagle Scout money** on an HP Envy
 in high school and felt gipped. I'd bought it because the box said "GTX dedicated
