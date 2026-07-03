@@ -7,6 +7,7 @@ tagline: The layoff laptop — cheap, loaded with RAM, dual-booted to Linux.
 status: active            # active | retired | stored | loaned
 compiled: 2026-07-01
 order: 2
+purchased: "Dec 9, 2023"
 
 hero: /assets/devices/thinkpad-t480s-hero.png
 hero_alt: Lenovo ThinkPad T480s, black business ultrabook, open, front three-quarter view

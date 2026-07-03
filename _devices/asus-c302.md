@@ -7,6 +7,7 @@ tagline: The college battery-life machine, revived in 2026.
 status: active            # active | retired | stored | loaned
 compiled: 2026-07-01
 order: 4
+purchased: "Feb 7, 2018"
 
 hero: /assets/devices/asus-c302-hero.png
 hero_alt: ASUS Chromebook Flip C302 shown in multiple 360-degree hinge positions
@@ -22,7 +23,7 @@ specs:
   - { icon: storage, k: Storage,   v: "64 GB eMMC",         note: "+ microSD slot" }
   - { icon: display, k: Display,   v: "12.5″ 1920×1080",    note: "IPS touch · 360° flip" }
   - { icon: os,      k: OS today,  v: "Debian 11 (Crostini)", note: "kernel 5.15.108" }
-  - { icon: battery, k: Battery,   v: "~10 hours",          note: "the reason I bought it" }
+  - { icon: battery, k: Battery,   v: "39 Wh",               note: "~10 hr real-world · the reason I bought it" }
   - { icon: weight,  k: Weight,    v: "2.6 lb",             note: "1,180 g · aluminum" }
   - { icon: ports,   k: Ports,     v: "2× USB-C",           note: "microSD · 3.5mm" }
   - { icon: price,   k: Paid,      v: "$510.35",            note: "all-in · Feb 7 2018" }

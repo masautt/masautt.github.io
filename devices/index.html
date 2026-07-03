@@ -55,6 +55,12 @@ title: Devices
         {% endfor %}
       </tr>
     {% endfor %}
+      <tr>
+        <td class="rowhead"><span class="ic">{% include spec-icons.html name="cart" %}</span>Purchased</td>
+        {% for d in devices %}
+          <td>{% if d.purchased %}{{ d.purchased }}{% else %}<span class="dash">—</span>{% endif %}</td>
+        {% endfor %}
+      </tr>
   </tbody>
 </table>
 </div>

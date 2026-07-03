@@ -7,6 +7,7 @@ tagline: Powerful, silent, and somehow still a letdown.
 status: loaned            # active | retired | stored | loaned
 compiled: 2026-07-01
 order: 3
+purchased: "Apr 10, 2021"
 
 hero: /assets/devices/macbook-air-m1-hero.png
 hero_alt: Space Gray Apple MacBook Air (M1, 2020), open, front view
@@ -23,7 +24,7 @@ specs:
   - { icon: display,  k: Display,   v: "13.3″ 2560×1600",    note: "Retina · P3 · 400 nits" }
   - { icon: lock,     k: Ext. displays, v: "1 external max", note: "M1 hardware limit" }
   - { icon: os,       k: OS,        v: "macOS",              note: "shipped Big Sur 11" }
-  - { icon: battery,  k: Battery,   v: "up to 18 hr",        note: "fanless — silent" }
+  - { icon: battery,  k: Battery,   v: "49.9 Wh",            note: "up to 18 hr web · fanless, silent" }
   - { icon: weight,   k: Weight,    v: "2.8 lb",             note: "1,290 g · Touch ID" }
   - { icon: ports,    k: Ports,     v: "2× Thunderbolt",     note: "USB4 · 3.5mm" }
   - { icon: price,    k: Paid,      v: "$1,193",             note: "refurb · Apr 10 2021" }
