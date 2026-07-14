@@ -1,0 +1,93 @@
+---
+layout: default
+title: Dev environment
+---
+
+<style>
+/* Code-block styling for this page, using the site's own tokens (site.css :root).
+   Generated here so the source stays in config and the page is self-contained. */
+.wrap pre{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px 18px;margin:0;overflow-x:auto;tab-size:2;color:var(--ink);
+  font:13px/1.55 ui-monospace,"Cascadia Code","SF Mono",Menlo,Consolas,"Liberation Mono",monospace}
+.wrap pre code{background:none;border:0;padding:0;font:inherit;color:inherit}
+.wrap .home-head p code,.wrap .section-title code{background:#0d1117;border:1px solid var(--line);
+  border-radius:6px;padding:1px 6px;color:var(--accent2);text-transform:none;letter-spacing:0;
+  font:13px ui-monospace,Consolas,monospace}
+/* syntax tokens — GitHub-dark hues, harmonizing with the site ground (#0d1117) */
+.wrap pre .tok-com{color:var(--muted);font-style:italic}
+.wrap pre .tok-kw{color:#ff7b72}
+.wrap pre .tok-str{color:#a5d6ff}
+.wrap pre .tok-num{color:#79c0ff}
+.wrap pre .tok-fn{color:#d2a8ff}
+</style>
+
+<div class="crumb"><a href="{{ '/' | relative_url }}">masautt</a> / dev</div>
+
+<div class="home-head">
+  <h1>Dev environment</h1>
+  <p>How my code is organized on every machine: one predictable tree where
+  <strong>folder = GitHub owner</strong>. The shape is data (<code>layout.json</code>),
+  reproduced by a two-command bootstrap — so no single machine is "the main one."</p>
+</div>
+
+<div class="section-title">The tree</div>
+<pre>~/source/
+├── orgs/                           # one folder per GitHub owner
+│   ├── devkit-inc/                 # flat — orgs/&lt;org&gt;/&lt;repo&gt;
+│   │   └── &lt;repo&gt;
+│   ├── sbrain-inc/                 # family-grouped — &lt;family&gt;/&lt;repo&gt;
+│   │   └── finapp/
+│   │       ├── finapp-web          # core app repo
+│   │       ├── comps/&lt;comp&gt;        # feature modules
+│   │       └── templates/&lt;tpl&gt;
+│   ├── teamx-inc/                  # family-grouped — hero nests by character
+│   │   └── hero/&lt;character&gt;/&lt;repo&gt;
+│   ├── concor-inc/                 # housing org — own repos at root...
+│   │   └── concordatgp/&lt;repo&gt;      # ...plus nested account repos
+│   ├── masautt-inc/                # housing org — own repos at root...
+│   │   └── masautt/&lt;repo&gt;          # ...plus nested account repos
+│   └── sbcbsd-inc/                 # housing org
+│       └── ITDBSD/                 # explicit placement map (county — schematic)
+│           ├── teamx/customers/&lt;dept&gt;/
+│           ├── teamx/projects/
+│           ├── teamx/old/
+│           ├── teamx/tools/
+│           ├── teamx/
+│           ├── documentation/
+│           └── repos/old/
+└── scratch/                        # non-repo work, outside orgs/</pre>
+
+<div class="section-title">The resolver — <code>resolve.mjs</code></div>
+<p>Turns a <code>&lt;owner&gt;/&lt;repo&gt;</code> slug into its on-disk path, applying every placement mode above. Rendered from the live file in <code>masautt-inc/config</code>, so it never drifts.</p>
+<pre class="hl"><code><span class="tok-com">// Canonical Node resolver. Ports resolve_dest.py's resolve_rel (kept in lockstep by</span>
+<span class="tok-com">// bootstrap/conformance/test/resolve.test.mjs). The PS/Python mirrors are slated to</span>
+<span class="tok-com">// retire in favor of this (Node-only tooling direction).</span>
+<span class="tok-kw">function</span> <span class="tok-fn">explicitSub</span>(owner, repo, layout) {
+  <span class="tok-kw">const</span> eg = layout.explicit_groups?.[owner];
+  <span class="tok-kw">if</span> (!eg) <span class="tok-kw">return</span> <span class="tok-kw">null</span>;
+  <span class="tok-kw">for</span> (<span class="tok-kw">const</span> [path, repos] <span class="tok-kw">of</span> Object.<span class="tok-fn">entries</span>(eg.placement || {})) {
+    <span class="tok-kw">if</span> ((repos || []).<span class="tok-fn">includes</span>(repo)) <span class="tok-kw">return</span> <span class="tok-str">`${path}/${repo}`</span>;
+  }
+  <span class="tok-kw">return</span> <span class="tok-kw">null</span>;                                            <span class="tok-com">// explicit owner, repo unlisted → org root</span>
+}
+
+<span class="tok-kw">function</span> <span class="tok-fn">familySub</span>(owner, repo, layout) {
+  <span class="tok-kw">const</span> fg = layout.family_grouped?.[owner];
+  <span class="tok-kw">if</span> (!fg || !repo) <span class="tok-kw">return</span> repo;
+  <span class="tok-kw">const</span> fam = repo.<span class="tok-fn">split</span>(<span class="tok-str">'-'</span>)[<span class="tok-num">0</span>];
+  <span class="tok-kw">if</span> (!(fg.families || []).<span class="tok-fn">includes</span>(fam)) <span class="tok-kw">return</span> repo;
+  <span class="tok-kw">if</span> (repo.<span class="tok-fn">endsWith</span>(<span class="tok-str">'-template'</span>)) <span class="tok-kw">return</span> <span class="tok-str">`${fam}/templates/${repo}`</span>;
+  <span class="tok-kw">if</span> (repo.<span class="tok-fn">endsWith</span>(<span class="tok-str">'-comp'</span>)) <span class="tok-kw">return</span> <span class="tok-str">`${fam}/comps/${repo}`</span>;
+  <span class="tok-kw">if</span> ([<span class="tok-str">'finapp'</span>, <span class="tok-str">'minapp'</span>, <span class="tok-str">'pinapp'</span>].<span class="tok-fn">includes</span>(fam) &amp;&amp; (repo.<span class="tok-fn">match</span>(/-/g) || []).length &gt;= <span class="tok-num">2</span>) <span class="tok-kw">return</span> <span class="tok-str">`${fam}/comps/${repo}`</span>;
+  <span class="tok-kw">return</span> <span class="tok-str">`${fam}/${repo}`</span>;
+}
+
+<span class="tok-kw">export</span> <span class="tok-kw">function</span> <span class="tok-fn">resolveRel</span>(slug, layout) {
+  <span class="tok-kw">const</span> i = slug.<span class="tok-fn">indexOf</span>(<span class="tok-str">'/'</span>);
+  <span class="tok-kw">const</span> owner = i &lt; <span class="tok-num">0</span> ? slug : slug.<span class="tok-fn">slice</span>(<span class="tok-num">0</span>, i);
+  <span class="tok-kw">const</span> repo = i &lt; <span class="tok-num">0</span> ? <span class="tok-str">''</span> : slug.<span class="tok-fn">slice</span>(i + <span class="tok-num">1</span>);
+  <span class="tok-kw">let</span> sub = <span class="tok-fn">explicitSub</span>(owner, repo, layout);
+  <span class="tok-kw">if</span> (sub === <span class="tok-kw">null</span>) sub = <span class="tok-fn">familySub</span>(owner, repo, layout);
+  <span class="tok-kw">const</span> house = layout.also_clone?.[owner]?.promotes_to;
+  <span class="tok-kw">return</span> house ? <span class="tok-str">`${house}/${owner}/${sub}`</span> : <span class="tok-str">`${owner}/${sub}`</span>;
+}</code></pre>
