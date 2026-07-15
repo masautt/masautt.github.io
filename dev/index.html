@@ -59,16 +59,16 @@ title: Dev environment
 
 <div class="section-title">The resolver — <code>resolve.mjs</code></div>
 <p>Turns a <code>&lt;owner&gt;/&lt;repo&gt;</code> slug into its on-disk path, applying every placement mode above. Rendered from the live file in <code>masautt-inc/config</code>, so it never drifts.</p>
-<pre class="hl"><code><span class="tok-com">// Canonical Node resolver. Ports resolve_dest.py's resolve_rel (kept in lockstep by</span>
-<span class="tok-com">// bootstrap/conformance/test/resolve.test.mjs). The PS/Python mirrors are slated to</span>
-<span class="tok-com">// retire in favor of this (Node-only tooling direction).</span>
+<pre class="hl"><code><span class="tok-com">// Canonical Node resolver. Ports resolve_dest.py's resolve_rel (kept in lockstep by</span>
+<span class="tok-com">// bootstrap/conformance/test/resolve.test.mjs). The PS/Python mirrors are slated to</span>
+<span class="tok-com">// retire in favor of this (Node-only tooling direction).</span>
 <span class="tok-kw">function</span> <span class="tok-fn">explicitSub</span>(owner, repo, layout) {
   <span class="tok-kw">const</span> eg = layout.explicit_groups?.[owner];
   <span class="tok-kw">if</span> (!eg) <span class="tok-kw">return</span> <span class="tok-kw">null</span>;
   <span class="tok-kw">for</span> (<span class="tok-kw">const</span> [path, repos] <span class="tok-kw">of</span> Object.<span class="tok-fn">entries</span>(eg.placement || {})) {
     <span class="tok-kw">if</span> ((repos || []).<span class="tok-fn">includes</span>(repo)) <span class="tok-kw">return</span> <span class="tok-str">`${path}/${repo}`</span>;
   }
-  <span class="tok-kw">return</span> <span class="tok-kw">null</span>;                                            <span class="tok-com">// explicit owner, repo unlisted → org root</span>
+  <span class="tok-kw">return</span> <span class="tok-kw">null</span>;                                            <span class="tok-com">// explicit owner, repo unlisted → org root</span>
 }
 
 <span class="tok-kw">function</span> <span class="tok-fn">familySub</span>(owner, repo, layout) {
