@@ -358,16 +358,17 @@ the lid suspends the machine and the whole thing is just a laptop on a fridge.</
 
 <p>The payload is one file — <code class="language-plaintext highlighter-rouge">~/Sounds/doorbell.m4a</code> — and one command:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ffplay <span class="nt">-nodisp</span> <span class="nt">-autoexit</span> ~/Sounds/doorbell.m4a
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh tp-450s.local <span class="s1">'ffplay -nodisp -autoexit ~/Sounds/doorbell.m4a'</span>
 </code></pre></div></div>
 
-<p>That’s the entire application. No service, no daemon, no framework. A guest hears the doorbell,
-gets up, walks to the front door, and finds nobody there. The 14″ 1600×900 panel it shipped with
-has not displayed anything in months, and the 3.3 lb chassis weight is a purely academic figure.</p>
+<p>That’s the entire application. No service, no daemon, no framework — <code class="language-plaintext highlighter-rouge">sshd</code> and <code class="language-plaintext highlighter-rouge">ffplay</code>, both
+of which were already there. A guest hears the doorbell, gets up, walks to the front door, and
+finds nobody there. The 14″ TN panel it shipped with has not displayed anything in months, and
+the 3.3 lb chassis weight is a purely academic figure.</p>
 
-<p>There is one loose end: <code class="language-plaintext highlighter-rouge">openssh-server</code> is installed but the <code class="language-plaintext highlighter-rouge">ssh</code> service is <strong>inactive and
-disabled</strong>, so at the moment the doorbell can only be rung from the machine itself — which
-rather defeats the point of hiding it on a fridge.</p>
+<p>The <code class="language-plaintext highlighter-rouge">ssh</code> half is the part that makes it a prank rather than a party trick. Without it the
+doorbell can only be rung from the machine itself — which, for a computer deliberately hidden
+on top of a fridge, rather defeats the point.</p>
 
 </div>
 
