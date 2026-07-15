@@ -194,8 +194,8 @@ footer code{background:var(--card);border:1px solid var(--line);border-radius:5p
     <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
     <div>
       <div class="k">Display</div>
-      <div class="v">14″ HD+ 1600×900</div>
-      <div class="note">the base panel, not the $70 FHD · lid stays shut anyway</div>
+      <div class="v">14″ HD+ 1600×900 TN</div>
+      <div class="note">the base panel, not the $70 FHD · TN, so the worst angles here</div>
     </div>
   </div>
   
@@ -231,7 +231,7 @@ footer code{background:var(--card);border:1px solid var(--line);border-radius:5p
     <div>
       <div class="k">Ports</div>
       <div class="v">3× USB-A · mini-DP</div>
-      <div class="note">VGA · RJ45 · combo audio · no USB-C, no HDMI</div>
+      <div class="note">VGA · RJ45 · combo audio · no USB-C — doesn't matter, it's docked</div>
     </div>
   </div>
   
@@ -271,6 +271,18 @@ the external pack is in the bay and dead. So of the 46.4 Wh this laptop shipped 
 <p>Detected: <code class="language-plaintext highlighter-rouge">20BWS0HT00</code> · BIOS <code class="language-plaintext highlighter-rouge">JBET51WW 1.16</code> · SANYO <code class="language-plaintext highlighter-rouge">45N1773</code> internal pack · PNY CS900
 500 GB over SATA. The one thing I could not read is the RAM layout — <code class="language-plaintext highlighter-rouge">dmidecode</code> needs root,
 so whether the 8 GB is 4 soldered + 4 in the SODIMM slot is still unconfirmed.</p>
+
+<p><strong>The noise is the fan, not the drive.</strong> There’s an intermittent vibration under load, and
+the two suspects were the disk and the fan. It can’t be the disk: <code class="language-plaintext highlighter-rouge">/sys/block/sda/queue/rotational</code>
+reports <code class="language-plaintext highlighter-rouge">0</code> and the drive is a PNY CS900 <strong>SSD</strong>. No platters, no spindle, no moving parts —
+an SSD physically cannot make a mechanical noise. That leaves the fan, by elimination.</p>
+
+<p><code class="language-plaintext highlighter-rouge">/proc/acpi/ibm/fan</code> backs it up. At idle it sits at <strong>0 rpm</strong> (40–49 °C) — genuinely
+stopped, not just quiet, which is why the noise is intermittent rather than constant. Under
+four-thread load the package climbs to <strong>81 °C</strong> and the fan ramps <strong>0 → 2,388 → 4,032 rpm</strong>,
+settling around 3,900. It spins up, it moves air, it holds temperature. So it isn’t dead —
+it’s an eleven-year-old sleeve bearing that rattles once it’s turning. Annoying, not fatal,
+and the good news is that the failure mode is a $15 part rather than the storage.</p>
 
 </div>
 
@@ -317,6 +329,25 @@ machine that can’t be portable is still a perfectly good computer, and an i7 w
 and a 500 GB SSD is an <em>absurd</em> amount of hardware to leave in a drawer.</p>
 
 <p>So it went on top of the fridge, lid shut, plugged in.</p>
+
+<p>It is not a <em>good</em> laptop, and I want to be honest about that. It’s <strong>one of the most
+underpowered machines here</strong> — only the ARM Chromebooks sit below it — and the screen is the
+worst of the lot: the base <strong>TN</strong> panel, which
+<a href="https://www.notebookcheck.net/Lenovo-ThinkPad-T450s-Ultrabook-Review.137248.0.html">Notebookcheck</a>
+measured at 400:1 contrast against the IPS option’s 700:1, with “color inversions and other
+image errors” the moment you move vertically. That’s the joke of the spec sheet: the <strong>$70
+FHD upgrade was the IPS upgrade</strong>. Whoever ordered this took the fastest CPU on the menu and
+the cheapest screen — and a decade later the CPU is irrelevant and the screen is the thing
+you notice.</p>
+
+<p>None of which matters for what it does now. There’s <strong>no USB-C</strong> on a 2015 ThinkPad, and it
+doesn’t need any: it’s docked above the fridge with speakers hanging off it, and the ports it
+does have — three USB-A and a headphone jack — are exactly the ports that job wants. And
+unlike the <a href="/devices/thinkpad-t480s/">T480s</a>, I’d never dual-boot <strong>Windows</strong> onto this one.
+The T480s had the headroom to make that worth the restart-and-update tax. This one doesn’t,
+and it has precisely one job.</p>
+
+<p>But it works. That’s the whole point of the page.</p>
 
 <blockquote>
   <p><code class="language-plaintext highlighter-rouge">HandleLidSwitch=ignore</code> · <code class="language-plaintext highlighter-rouge">HandleLidSwitchDocked=ignore</code></p>
@@ -375,6 +406,9 @@ rather defeats the point of hiding it on a fridge.</p>
   
   <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg></span>
     <a href="https://www.laptopmag.com/reviews/laptops/lenovo-thinkpad-t450s">Laptop Mag — ThinkPad T450s review</a> — the 2015 pricing: $881 base, $1,592 as reviewed</li>
+  
+  <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg></span>
+    <a href="https://www.notebookcheck.net/Lenovo-ThinkPad-T450s-Ultrabook-Review.137248.0.html">Notebookcheck — T450s review</a> — the panels: TN 400:1 vs the FHD IPS 700:1</li>
   
   <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg></span>
     <a href="https://commons.wikimedia.org/wiki/File:ThinkPad_T450s.png">Hero photo — Wikimedia Commons</a> — the source file, CC BY-SA 4.0</li>
