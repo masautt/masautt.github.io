@@ -12,7 +12,7 @@ title: null
 <div class="section-title">Sections</div>
 <div class="card-grid">
   <a class="dev-card" href="{{ '/devices/' | relative_url }}">
-    <div class="thumb"><img src="{{ '/assets/devices/asus-c302-hero.png' | relative_url }}" alt="Devices"></div>
+    <div class="thumb"><img src="{{ '/devices/assets/devices/asus-c302-hero.png' | relative_url }}" alt="Devices"></div>
     <div class="meta">
       <div class="cat">Reference</div>
       <div class="name">Devices</div>

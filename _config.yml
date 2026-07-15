@@ -3,20 +3,17 @@ description: A running reference to the things in my life.
 baseurl: ""
 url: "https://masautt.github.io"
 
-# Devices are a Jekyll collection: one file per device in _devices/,
-# each rendered at /devices/<name>/ using the shared `device` layout.
-collections:
-  devices:
-    output: true
-    permalink: /devices/:name/
-
-defaults:
-  - scope: { path: "", type: "devices" }
-    values: { layout: "device" }
+# Sections live in their own masautt-inc repos, which build their own output and push it
+# here as static files (devices/, hotkeys/, dev/). This repo owns the layout, the CSS, and
+# the landing page — it does not render sections.
+#
+# There is deliberately no `devices` collection: this repo used to render /devices/:name/
+# from a _devices/ collection, which silently shadowed the pages masautt-inc/devices was
+# pushing to the same paths. Don't reintroduce a collection whose permalink collides with
+# a pushed section.
 
 # GitHub Pages builds this with the classic Jekyll pipeline.
 plugins: []
 exclude:
   - README.md
   - preview.sh
-  - export.sh
