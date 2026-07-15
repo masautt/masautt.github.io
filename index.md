@@ -29,4 +29,12 @@ title: null
     </div>
   </a>
   <!-- dev-card:end -->
+  <a class="dev-card" href="{{ '/hotkeys/' | relative_url }}">
+    <div class="thumb"><svg viewBox="0 0 96 64" role="img" aria-label="keyboard" style="display:block;width:auto;height:110px" xmlns="http://www.w3.org/2000/svg"><rect x="7" y="15" width="82" height="38" rx="6" fill="none" stroke="#30414f" stroke-width="3"/><rect x="14" y="22" width="9" height="7" rx="2" fill="#7aa2f7"/><rect x="27" y="22" width="9" height="7" rx="2" fill="#30414f"/><rect x="40" y="22" width="9" height="7" rx="2" fill="#30414f"/><rect x="53" y="22" width="9" height="7" rx="2" fill="#30414f"/><rect x="66" y="22" width="16" height="7" rx="2" fill="#30414f"/><rect x="14" y="33" width="12" height="7" rx="2" fill="#30414f"/><rect x="30" y="33" width="9" height="7" rx="2" fill="#7aa2f7"/><rect x="43" y="33" width="9" height="7" rx="2" fill="#30414f"/><rect x="56" y="33" width="9" height="7" rx="2" fill="#30414f"/><rect x="69" y="33" width="13" height="7" rx="2" fill="#30414f"/><rect x="26" y="44" width="44" height="6" rx="2" fill="#30414f"/></svg></div>
+    <div class="meta">
+      <div class="cat">Reference</div>
+      <div class="name">Hotkeys</div>
+      <div class="tag">Desktop shortcuts, and their shell twins.</div>
+    </div>
+  </a>
 </div>
