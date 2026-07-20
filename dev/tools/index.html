@@ -1,0 +1,59 @@
+---
+layout: default
+title: Desktop tools
+---
+
+<style>
+/* Screenshot framing, using the site's own tokens (site.css :root). */
+.wrap .shot{display:block;width:100%;height:auto;border:1px solid var(--line);
+  border-radius:var(--radius);background:var(--card);margin:0 0 6px}
+.wrap .shot-note{color:var(--muted);font-size:13px;margin:0 0 26px}
+.wrap .stack{color:var(--muted);font-size:13px;letter-spacing:.02em}
+.wrap .home-head p code,.wrap .section-title code{background:#0d1117;border:1px solid var(--line);
+  border-radius:6px;padding:1px 6px;color:var(--accent2);text-transform:none;letter-spacing:0;
+  font:13px ui-monospace,Consolas,monospace}
+</style>
+
+<div class="crumb"><a href="{{ '/' | relative_url }}">masautt</a> / <a href="{{ '/dev/' | relative_url }}">dev</a> / tools</div>
+
+<div class="home-head">
+  <h1>Desktop tools</h1>
+  <p>Three Electron apps I actually use daily, built on one shared shell. The interesting
+  part isn't any single tool — it's that the app bar, the theme switcher, the test base and
+  the packaging all live in two versioned packages, and each app inherits them instead of
+  owning them.</p>
+</div>
+
+<div class="section-title">localhub</div>
+<img class="shot" src="{{ '/dev/tools/shots/localhub.png' | relative_url }}" alt="localhub showing a list of repositories from the local orgs tree">
+<p class="shot-note">A local GitHub, over the tree.</p>
+<p>Points at <code>~/source/orgs/</code> and renders it the way a forge would: owners, repos,
+branches, commits, readmes. It's the tree from the parent page made browsable — no network,
+no API tokens, nothing to log into. Refresh is explicit, so it never sits there re-scanning
+a hundred and fifty repos in the background.</p>
+<p class="stack">Express · React 19 · React Router 7 · Vite · Electron</p>
+
+<div class="section-title">storybook</div>
+<img class="shot" src="{{ '/dev/tools/shots/storybook.png' | relative_url }}" alt="storybook displaying a project's spec calendar for the month">
+<p class="shot-note">A project viewer you can point anywhere.</p>
+<p>Opens any project directory and turns what's already in it into something readable: git
+history as a narrative, and dated design and plan documents laid out on a month calendar, so
+a repo's paper trail is browsable by when it happened rather than by filename.</p>
+<p class="stack">React 19 · Vite · Electron · provider hooks per project type</p>
+
+<div class="section-title">masaudit</div>
+<img class="shot" src="{{ '/dev/tools/shots/masaudit.png' | relative_url }}" alt="masaudit showing an audit summary of local .NET projects">
+<p class="shot-note">What's actually installed, in a table.</p>
+<p>Walks the local .NET stack and writes what it finds into SQLite, then serves it as a
+queryable audit. Storage is <code>node:sqlite</code> from the standard library, so the whole
+thing runs with zero native dependencies and survives a Node upgrade without a rebuild.</p>
+<p class="stack">Node 24 · node:sqlite · React 19 · Electron</p>
+
+<div class="section-title">The shared shell</div>
+<p>All three are thin. <code>electron-ui</code> owns the main-process helpers, window and
+theme persistence, the packaging config and the afterpack step; <code>react-ui</code> owns
+the app bar, the design tokens and the light/dark switcher. Both are published as private
+GitHub Packages and consumed <em>by version</em> — so a fix to the app bar ships as a version
+bump in three apps, and none of them can quietly fork it.</p>
+<p>That's the same idea as the layout on the parent page, one level up: decide the shape once,
+write it down somewhere executable, and let every consumer inherit it.</p>
